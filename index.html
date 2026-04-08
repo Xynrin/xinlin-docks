@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>辛林docks - 纯前端 Markdown 文档系统</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.2.0/github-markdown.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+        <aside class="sidebar-left" id="sidebar-left">
+            <div class="sidebar-header">
+                <div class="brand-copy">
+                    <h1 class="site-title">辛林docks</h1>
+                    <p class="site-desc">纯前端 Markdown 文档系统</p>
+                </div>
+
+                <div class="sidebar-tools">
+                    <label class="search-box" for="search-input">
+                        <input
+                            class="sidebar-search-input"
+                            id="search-input"
+                            type="search"
+                            placeholder="搜索标题、正文、命令"
+                            autocomplete="off"
+                        >
+                    </label>
+                    <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">切换深色</button>
+                    <p class="search-status" id="search-status" aria-live="polite"></p>
+                </div>
+            </div>
+
+            <div class="search-results" id="search-results"></div>
+
+            <nav class="nav-menu" id="nav-menu"></nav>
+        </aside>
+
+        <main class="content-area">
+            <div class="content-wrapper">
+                <div class="loading-state" id="loading-state">
+                    <div class="loading-spinner"></div>
+                    <p>正在加载文档...</p>
+                </div>
+
+                <article class="markdown-body" id="markdown-content"></article>
+
+                <nav class="page-navigation" id="page-navigation"></nav>
+            </div>
+        </main>
+
+        <aside class="sidebar-right" id="sidebar-right">
+            <div class="toc-header">
+                <h3>目录</h3>
+            </div>
+            <nav class="toc-menu" id="toc-menu"></nav>
+        </aside>
+
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="打开菜单">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="overlay" id="overlay"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked@9.1.6/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/highlight.min.js"></script>
+    <script src="docs-data.js"></script>
+    <script src="render.js"></script>
+</body>
+</html>
