@@ -8,7 +8,7 @@
 ## 特性
 
 - **完全静态** - 无需后端、数据库或构建工具
-- **三栏布局** - 经典菜鸟教程/W3School 风格
+- **三栏布局** - 经典W3School 风格
 - **配置即页面** - 新增页面只需修改一个数组
 - **纯原生技术** - HTML5 + CSS3 + ES6+
 - **仅3个CDN依赖** - github-markdown-css、marked.js、highlight.js
