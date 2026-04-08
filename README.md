@@ -13,6 +13,12 @@
 - **纯原生技术** - HTML5 + CSS3 + ES6+
 - **仅3个CDN依赖** - github-markdown-css、marked.js、highlight.js
 
+## 预览
+<img width="1887" height="895" alt="image" src="https://github.com/user-attachments/assets/f053c630-204a-4cc5-80f0-f507dd01fc66" />
+
+
+
+
 ## 快速开始
 
 ### 1. 下载项目
